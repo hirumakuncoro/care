@@ -1,0 +1,9 @@
+services:
+  care:
+    image: ghcr.io/hirumakuncoro/care:latest
+    pull_policy: always
+    container_name: care
+    environment:
+      - TG_TOKEN=${TG_TOKEN}
+      - TG_CHAT_ID=${TG_CHAT_ID}
+    restart: unless-stopped
