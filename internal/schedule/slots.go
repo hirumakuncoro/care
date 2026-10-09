@@ -32,7 +32,7 @@ var Slots = []*Slot{
 		Items: []Item{
 			{Name: "Hi-Bone + D3 + I-Folic", Category: CatSupplement, Note: "sesudah makan"},
 		},
-},
+	},
 	{
 		ID:       "snack_pro",
 		At:       ClockTime{Hour: 16, Min: 0},
@@ -45,14 +45,14 @@ var Slots = []*Slot{
 		},
 	},
 	{
-		ID:       "dinner",
-		At:       ClockTime{Hour: 19, Min: 0},
-		Title:    "Makan Malam",
+		ID:       "snack_cal",
+		At:       ClockTime{Hour: 18, Min: 30},
+		Title:    "Camilan Kalori",
 		Kind:     KindConfirm,
 		WindowMs: 60 * 60 * 1000,
 		Items: []Item{
-			{Name: "Maltofer #2", Category: CatSupplement, Note: "sesudah makan"},
-			{Name: "Buah vit C", Category: CatFruit},
+			{Name: "Biskuit gandum + pisang", Category: CatSnack},
+			{Name: "Susu Diamond #3", Category: CatMilk},
 		},
 	},
 	{
@@ -64,16 +64,16 @@ var Slots = []*Slot{
 		Items: []Item{
 			{Name: "10 kick count", Category: CatActivity},
 		},
-},
+	},
 	{
-		ID:       "snack_cal",
-		At:       ClockTime{Hour: 21, Min: 30},
-		Title:    "Camilan Kalori",
+		ID:       "dinner",
+		At:       ClockTime{Hour: 21, Min: 0},
+		Title:    "Makan Malam",
 		Kind:     KindConfirm,
 		WindowMs: 60 * 60 * 1000,
 		Items: []Item{
-			{Name: "Biskuit gandum + pisang", Category: CatSnack},
-			{Name: "Susu Diamond #3", Category: CatMilk},
+			{Name: "Maltofer #2", Category: CatSupplement, Note: "sesudah makan"},
+			{Name: "Buah vit C", Category: CatFruit},
 		},
 	},
 }
